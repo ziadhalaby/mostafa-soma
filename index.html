@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#173f72" /><title>Mostafa & Soma | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&family=Marhey:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="envelope" id="envelope" aria-label="Open the invitation">
+    <div class="invite-card">
+      <img class="floral-frame" src="assets/floral-frame.png" alt="" />
+      <div class="invite-copy"><span class="heart">♥</span><p class="tiny">WEDDING INVITATION</p><h1><span>Mostafa</span><i>&</i><span>Soma</span></h1><div class="ornament">✦</div><p class="invite-date">SEPTEMBER 2, 2026</p><p class="cordial">Cordially invite you</p><button class="open-button" id="openInvitation" aria-label="Open invitation">→</button></div>
+    </div>
+  </section>
+  <main id="website" hidden>
+    <section class="hero section-reveal"><img class="hero-frame" src="assets/floral-frame.png" alt="" /><div class="hero-center"><p class="eyebrow">THE WEDDING OF</p><h1><span>Mostafa</span><i>&</i><span>Soma</span></h1><span class="ornament">✦</span><p class="hero-date">WEDNESDAY · SEPTEMBER 2 · 2026</p><a class="scroll-hint" href="#celebrate">DISCOVER <span>↓</span></a></div></section>
+    <section class="celebrate content-section" id="celebrate"><div class="section-heading reveal"><p class="eyebrow blue">A CELEBRATION OF LOVE</p><h2>We would love<br>for you to be there.</h2><span class="ornament">✦</span></div><div class="photo-and-copy reveal"><div class="photo-frame"><img src="assets/mostafa-and-soma.png" alt="Mostafa and Soma"></div><p>Join us for an evening full of love, laughter, and beautiful memories as we celebrate this special day together.</p></div></section>
+    <section class="countdown-section content-section"><img class="corner-flower" src="assets/floral-frame.png" alt="" /><div class="section-heading reveal"><p class="eyebrow blue">COUNTDOWN</p><h2>Counting down<br>to forever.</h2></div><div class="countdown reveal" aria-label="Countdown to wedding"><div><strong id="days">00</strong><span>DAYS</span></div><i></i><div><strong id="hours">00</strong><span>HOURS</span></div><i></i><div><strong id="minutes">00</strong><span>MINUTES</span></div><i></i><div><strong id="seconds">00</strong><span>SECONDS</span></div></div></section>
+    <section class="calendar-section content-section"><img class="watermark-frame" src="assets/floral-frame.png" alt="" /><div class="section-heading reveal"><p class="eyebrow blue">SAVE THE DATE</p><h2>September 2026</h2></div><div class="calendar-card reveal"><div class="calendar-title">September <span>2026</span></div><div class="weekday"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div><div class="dates" id="calendarDates"></div></div><div class="calendar-actions reveal"><a id="addCalendar" href="#">Add to Calendar</a><button class="primary-button" id="rsvpButton">Confirm Attendance <span>→</span></button></div></section>
+    <section class="venue content-section"><div class="section-heading reveal"><p class="eyebrow blue">WEDDING RECEPTION VENUE</p><h2><span lang="ar">أكاسيا</span> <i>—</i> Acacia</h2><p class="venue-time">Wednesday, September 2nd · 8:00 PM</p></div><a class="map-card reveal" href="https://maps.app.goo.gl/GCQ5THdxBJFsDNi86?g_st=iw" target="_blank" rel="noopener" aria-label="Open Acacia in Google Maps"><div class="map-grid"></div><div class="map-road road-a"></div><div class="map-road road-b"></div><div class="pin">♥</div><div class="map-label">Acacia<br><small>Wedding Reception</small></div><span class="open-maps">Open in Maps ↗</span></a></section>
+    <section class="closing"><img src="assets/floral-frame.png" alt="" /><div class="closing-copy"><p class="eyebrow">WITH LOVE</p><h2>Mostafa <i>&</i> Soma</h2><p>02 · 09 · 2026</p></div></section>
+  </main>
+  <dialog id="rsvpDialog"><button class="close" aria-label="Close">×</button><p class="eyebrow blue">RSVP</p><h2>We can't wait<br>to celebrate with you.</h2><form id="rsvpForm"><label>Your name<input required placeholder="Your name" /></label><label>Number of guests<select><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option></select></label><button class="primary-button" type="submit">Confirm attendance <span>→</span></button></form><p class="form-note" id="formNote"></p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
+
